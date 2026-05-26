@@ -1,0 +1,18 @@
+# Do not edit - changes here will be overwritten by Copier
+_commit: v0.6.6
+_src_path: gh:fractal-analytics-platform/fractal-tasks-template
+author_email: maurice.kahnwald@fmi.ch
+author_name: Maurice Kahnwald
+feature_task: ATMC Analysis Feature Extraction
+include_feature_task: true
+include_image_processing_task: false
+include_segmentation_task: false
+mode: customize
+package_name: fractal_atmc_measurements
+project_license: MIT
+project_name: fractal-atmc-measurements
+project_short_description: Conversion of the ATMC Analysis workflow as a fractal task.
+project_url: https://github.com/MauriceKahnwald/fractal-atmc-measurements
+run_git_init: true
+run_pixi_init_task: false
+
