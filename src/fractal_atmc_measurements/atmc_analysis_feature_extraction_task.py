@@ -171,7 +171,9 @@ def atmc_analysis_feature_extraction_task(
         table_data=feature_df, reference_label=label_image_name
     )
     # Save the DataFrame as a table in the OME-Zarr container
-    ome_zarr.add_table(name=output_table_name, table=feature_table, overwrite=overwrite)
+    ome_zarr.add_table(
+        name=output_table_name, table=feature_table, overwrite=overwrite, backend="csv"
+    )
     logger.info(f"Feature table {output_table_name} added to OME-Zarr container.")
     return None
 

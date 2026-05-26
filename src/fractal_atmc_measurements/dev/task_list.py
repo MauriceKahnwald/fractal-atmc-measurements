@@ -11,9 +11,6 @@ DOCS_LINK = "https://github.com/MauriceKahnwald/fractal-atmc-measurements"
 
 
 TASK_LIST = [
-    
-    
-    
     ParallelTask(
         name="ATMC Analysis Feature Extraction",
         executable="atmc_analysis_feature_extraction_task.py",
@@ -24,5 +21,4 @@ TASK_LIST = [
         tags=["Region Properties", "Intensity", "Morphology"],
         docs_info="file:docs_info/atmc_analysis_feature_extraction_task.md",
     ),
-    
 ]

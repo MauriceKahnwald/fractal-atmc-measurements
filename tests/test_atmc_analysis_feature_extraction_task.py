@@ -24,9 +24,13 @@ from fractal_atmc_measurements.atmc_analysis_feature_extraction_task import (
         ((1, 1, 10, 64, 64), "tczyx"),
     ],
 )
-def test_atmc_analysis_feature_extraction_task(tmp_path: Path, shape: tuple[int, ...], axes: str):
+def test_atmc_analysis_feature_extraction_task(
+    tmp_path: Path, shape: tuple[int, ...], axes: str
+):
     """Basic test for the region props features task."""
     test_data_path = tmp_path / "data.zarr"
+
+    print(test_data_path)
 
     ome_zarr = create_synthetic_ome_zarr(
         store=test_data_path,
